@@ -1,0 +1,25 @@
+
+
+<div class="form-container">
+    <form class="form-signin">
+        <img class="mb-4" src="assets/images/bootstrap-solid.svg" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <div>
+            <br>
+            <span class="ui-float-label">
+                <input id="float-input" class="extend-width" type="text" size="30" pInputText [(ngModel)]= "loginCredentials.username" name="username"> 
+                <label for="float-input">Username</label>    
+            </span>
+            <br>
+            <span class="ui-float-label">
+                <input id="float-input" class="extend-width" type="text" size="30" pInputText [(ngModel)]= "loginCredentials.password" name="password"> 
+                <label for="float-input">Password</label>    
+            </span>
+            <br>
+            <button pButton type="button" label="Login" class="ui-button-rounded btn-align-center" (click)= "saveData()"></button>
+            <!-- <button pButton type="button" class="btn-align-center" label="Login" (click)= "saveData()"></button> -->
+        </div>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+      </form>
+
+</div>

@@ -1,0 +1,49 @@
+<div class="form-container">
+    <form class="form-signin">
+        <img class="mb-4" src="assets/images/bootstrap-solid.svg" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <div>
+            <br>
+            <input id="input" class="extend-width" type="text" size="30" pInputText [(ngModel)]="loginCredentials.username" name="username">
+            <!-- <span class="ui-float-label">
+                <input id="float-input" class="extend-width" type="text" size="30" pInputText> 
+                <label for="float-input">Username</label>    
+            </span> -->
+            <br>
+            <br>
+            <input type="password" class="extend-width" pPassword [(ngModel)]="loginCredentials.password" name="password" />
+
+            <!-- <span class="ui-float-label">
+                
+                
+                <input id="float-input" class="extend-width" type="text" size="30" pInputText [(ngModel)]= "loginCredentials.password" name="password"> 
+                <label for="float-input">Password</label>    
+            </span> -->
+            <br>
+            <div>
+                <div class="ui-g-12 ui-md-4 extend-width">Login Date
+                    <!-- <h5>Login Date</h5> -->
+                    <p-calendar [showIcon]="true" [(ngModel)]="loginCredentials.loginDate" name="date"></p-calendar>
+                    <br> Time
+                    <br>
+                    <!-- <h5>Time </h5> -->
+                    <p-calendar [timeOnly]="true" [(ngModel)]="loginCredentials.loginTime" name="time"></p-calendar>
+                </div>
+                <br>
+                <!-- <div class="ui-g-12 ui-md-4">
+                  <h3>Time </h3>
+                  <p-calendar [(ngModel)]="date8" [timeOnly]="true"></p-calendar>
+              </div> -->
+            </div>
+            <br>
+            <button pButton type="button" label="Login & Save" class="ui-button-raised ui-button-success btn-align-center" (click)="saveData()"></button>
+            <!-- <button pButton type="button" label="Login" class="ui-button-rounded btn-align-center" (click)= "saveData()"></button> -->
+            <!-- <button pButton type="button" class="btn-align-center" label="Login" (click)= "saveData()"></button> -->
+        </div>
+        <p class="mt-5 mb-3 text-muted">&copy; 2017-2019</p>
+
+
+    </form>
+
+
+</div>
